@@ -18,10 +18,10 @@
 - **音乐库入口接入真实链接**：Apple Music → 喜爱歌曲歌单；QQ 音乐 → 官方歌单页（链接由用户提供）。
 - **新增 B 站展示入口**：位于「关于我」个人简介下方，视觉与 Apple Music 模块一致（渐变顶边卡片 + 官方蓝电视图标 + 按钮），链接 https://b23.tv/mt0DA8A。
 - **关于我区块精简（同源迭代）**：B 站由独立大模块改为个人档案框内的紧凑内联链接（`.profile-socials`），保留官方蓝电视图标与真实链接；街头摄影设备由 `Fujifilm X-Pro3` 改为 `iPhone 13 Pro · 飓风相机 2.0 // 随手拍出电影感`。
-- **B 站风格小卡片布局**：`AI & TOOLS` 卡片内改为 4 个可点击小卡片，各带官方风格 Logo（DeepSeek 蓝 / ChatGPT 绿 / Claude 橙 / WorkBuddy 官方绿）与官网链接，悬浮聚光；链接：chat.deepseek.com、chatgpt.com、claude.ai、workbuddy.cn。
+- **B 站风格小卡片布局**：`AI & TOOLS` 卡片内改为 4 个可点击小卡片，各带官方风格 Logo与官网链接，悬浮聚光。
 - **设备小卡片归入街头摄影并缩小**：iPhone 13 Pro 与飓风相机 2.0 两张小卡片收进「街头摄影」卡片内部（`.card-gear` + `.gear-mini`），不再是 bento 中独立的 gear-row 大模块；随后按用户反馈改为 flex-wrap 紧凑标签（padding 7px 11px、圆角 9px、图标 20px、字号 .8rem/10px），尺寸与「B 站 · 视频频道」入口接近，不再撑满整行。
 - **移除黑色跳转提示**：全部 6 张小卡片（4 个 AI 工具 + 2 个设备）右侧的外链箭头图标（`.mini-ext`）已删除，卡片更干净。
-- **LOGO 修正**：WorkBuddy 由手绘紫色盾牌改为**官方绿色渐变 Logo**（workbuddy.cn 官网 SVG，去模糊光晕后内嵌 PNG base64）；iPhone 13 Pro 因无设备图改用**苹果官方黑色剪影 Logo**（随主题 currentColor）；飓风相机 2.0 改用**影视飓风官方光圈 Logo**（ysjf.com 官网 logo.svg，白底黑图，双主题清晰）。设备链接：Apple 官方技术规格页 `support.apple.com/zh-cn/111871`；影视飓风官网 `ysjf.com`。
+- **LOGO 修正**：WorkBuddy 由手绘紫色盾牌改为**官方绿色渐变 Logo*；iPhone 13 Pro 因无设备图改用**苹果官方黑色剪影 Logo**（随主题 currentColor）；飓风相机 2.0 改用**影视飓风官方光圈 Logo**。设备链接：Apple 官方技术规格页 `support.apple.com/zh-cn/111871`；影视飓风官网 `ysjf.com`。
 - **音乐氛围**：删除 `SYNTHWAVE` 标签；`LO-FI` 标签改粉色磨砂玻璃质感 + 缓慢飘移的粒子点与扫光动画，字体色阶与其他标签区分；`prefers-reduced-motion` 下关闭动画。
 - **页脚品牌名**：由 `DEV.IO` 改为 `Ethan Liang`。
 - **官方图标实现方式**：从各平台官网抓取 favicon，ICO 正确解码为透明 PNG（处理 40 字节 DIB 头偏移与自下而上行序），以 base64 data URI 内嵌进 SVG symbol，保持单文件零外部依赖。
@@ -36,10 +36,9 @@
 
 ## beta0.1.4 — 真实社交链接与官方品牌图标
 
-- Hero 文案改为「我是梁铭恩 aka：Ethan。」
-- 经历时间线精简为单卡两行（齐齐哈尔大学 2022–2026；大创、互联网+ 均获校二等奖）。
-- 联系区全部接入真实链接：X（x.com/Lme2261）、GitHub 主页、LinkedIn、Gmail、163 邮箱、Instagram；`RSS_FEED` 改为 Instagram。
-- 引入各平台官方品牌 SVG 标志并保留品牌原色（X 随主题黑白、GitHub 随主题黑白、LinkedIn #0A66C2、Google 四色、网易红、Instagram 渐变）。
+- 经历时间线精简为单卡两行。
+- 联系区全部接入真实链接：X、GitHub 主页、LinkedIn、Gmail、163 邮箱、Instagram；。
+- 引入各平台官方品牌 SVG 标志并保留品牌原色。
 
 ## beta0.1.3 — 个人背景与作品扩充
 
@@ -49,7 +48,7 @@
 
 - 修复窄屏导航消失：≤960px 用汉堡按钮 + 下拉菜单，支持点击外部 / Esc 收起。
 - 修复导航错跳与死链：导航项与真实锚点一一对应（首页/关于/经历/作品/联系），滚动自动高亮，锚点增加偏移避免被固定导航遮挡。
-- 恢复中文名「梁铭恩」，与 Ethan 并列显示（页头、Hero、关于我、meta author）。
+- 恢复中文名「梁铭恩」，与 Ethan 并列显示。
 - 全页繁体统一为简体，`lang` 改为 `zh-CN`。
 - 修复交互空转：404 图片降级显示，占位链接阻止跳转。
 
@@ -63,7 +62,6 @@
 ## beta0.1 — 初始化与改名
 
 - 将 `ioi.github.io` 私有仓库启用 GitHub Pages，并把 HTML 设为首页（新增 `index.html` 作为入口）。
-- 全站旧代号统一替换：`Tonny Liang` → `Ethan`（可见文案、标题、meta、alt 及相关标识）。
 - 视觉改为深色太空质感：多层冷色渐变、噪点、星点微闪、玻璃拟态、光标光晕、跑马灯、滚动淡入；尊重 `prefers-reduced-motion`，触摸设备关闭光标特效。
 - 移除原 Tailwind / Lucide / Google Fonts 三个 CDN 依赖，图标改为内联 SVG。
 
