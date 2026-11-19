@@ -1,11 +1,6 @@
 # Ethan 个人主页 — 更新历史（Update History）
 
-仓库：`EthanLiang21/Ethan-s-Web`（原 `ioi.github.io`，已重命名）
 站点：https://ethanliang21.github.io/Ethan-s-Web/
-
-本站所有版本均为**单文件 HTML**，零第三方库/框架依赖，字体与图标全部内嵌。
-
-版本命名对照：`beta0.1`（初版）→ `0.1.1` ~ `0.1.4`（功能迭代）→ `beta0.5`（当前线上版本，图标 / 交互 / 视觉综合优化）。
 
 ---
 
