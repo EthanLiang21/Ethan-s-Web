@@ -15,7 +15,10 @@
 - **QQ 音乐图标改用官方资源**：内嵌 QQ 音乐官方黄色圆底 + 绿色音符标志（y.qq.com 官方 favicon，PNG base64）。
 - **音乐库入口接入真实链接**：Apple Music → 喜爱歌曲歌单；QQ 音乐 → 官方歌单页（链接由用户提供）。
 - **新增 B 站展示入口**：位于「关于我」个人简介下方，视觉与 Apple Music 模块一致（渐变顶边卡片 + 官方蓝电视图标 + 按钮），链接 https://b23.tv/mt0DA8A。
-- **关于我区块精简（同源迭代）**：B 站由独立大模块改为个人档案框内的紧凑内联链接（`.profile-socials`），保留官方蓝电视图标与真实链接；`CODE & CRAFT` 卡片改为 `AI & TOOLS`，文案「日常创作与开发的得力助手：推理、对话、编码与自动化，让想法更快落地。」，标签换为 `_DeepSeek / _ChatGPT / _Claude / _WorkBuddy`；街头摄影设备由 `Fujifilm X-Pro3` 改为 `iPhone 13 Pro · 飓风相机 2.0 // 随手拍出电影感`。
+- **关于我区块精简（同源迭代）**：B 站由独立大模块改为个人档案框内的紧凑内联链接（`.profile-socials`），保留官方蓝电视图标与真实链接；街头摄影设备由 `Fujifilm X-Pro3` 改为 `iPhone 13 Pro · 飓风相机 2.0 // 随手拍出电影感`。
+- **B 站风格小卡片布局**：`AI & TOOLS` 卡片内改为 4 个可点击小卡片，各带官方风格 Logo（DeepSeek 蓝 / ChatGPT 绿 / Claude 橙 / WorkBuddy 紫）与官网链接，悬浮聚光 + 外链箭头；链接：chat.deepseek.com、chatgpt.com、claude.ai、workbuddy.cn。
+- **设备小卡片**：新增两张 B 站风格小卡片——iPhone 13 Pro（自绘手机 SVG）→ Apple 官方技术规格页 `support.apple.com/zh-cn/111871`；飓风相机（自绘红底风暴标志）→ 官网 `ysjf.com`。
+- **音乐氛围**：删除 `SYNTHWAVE` 标签；`LO-FI` 标签改粉色磨砂玻璃质感 + 缓慢飘移的粒子点与扫光动画，字体色阶与其他标签区分；`prefers-reduced-motion` 下关闭动画。
 - **页脚品牌名**：由 `DEV.IO` 改为 `Ethan Liang`。
 - **官方图标实现方式**：从各平台官网抓取 favicon，ICO 正确解码为透明 PNG（处理 40 字节 DIB 头偏移与自下而上行序），以 base64 data URI 内嵌进 SVG symbol，保持单文件零外部依赖。
 - **版权 / 协议文案替换**：底部 `© 2025 DEV.IO CORPORATION` / `Protocol established 2025` / `End of Line` 替换为用户版权与协议占位信息，年份同步当前时间（2026），含 `[你的姓名 / 品牌名待补充]`、`[链接待补充]`、`[备案信息待补充]` 等清晰占位符；更新于 2026.11.19。
