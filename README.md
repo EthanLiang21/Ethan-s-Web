@@ -1,7 +1,5 @@
 # Ethan 个人主页 · Ethan's Web
 
-梁铭恩（Ethan）的个人主页与作品展示站，部署于 GitHub Pages。
-
 🔗 **在线访问**：https://ethanliang21.github.io/Ethan-s-Web/
 
 ---
@@ -14,15 +12,7 @@
 
 页面由顶部固定导航（首页 / 关于 / 经历 / 作品 / 联系）串联，包含以下板块：
 
-- **Hero 首屏** — 「我是梁铭恩 aka：Ethan。」个人标识与简介。
-- **关于我（ABOUT）** — 个人档案（生物技术本科、现于横琴济恩药业从事研发 QA），内联 B 站视频频道入口，以及兴趣卡片：
-  - **AI & TOOLS**：DeepSeek、ChatGPT、Claude、WorkBuddy 四个官方 Logo 快捷入口。
-  - **街头摄影**：iPhone 13 Pro、飓风相机 2.0 两个设备标签。
-  - **独立游戏**：Hollow Knight。
-  - **音乐偏好**：Synthwave / Lo-Fi / R&B / Rock / Jazz，含 QQ 音乐、Apple Music 歌单入口与 LO-FI 粉色磨砂粒子动效。
-- **经历时间线（TIMELINE）** — 齐齐哈尔大学（2022–2026）、大创与「互联网+」校二等奖等。
-- **精选作品（WORK）** — GMP 交互式全库项目（独立站点，单文件交互网页）。
-- **联系（CONTACT）** — X、GitHub、LinkedIn、Instagram，以及 Gmail / 163 邮箱一键复制入口（点击复制并提示，不跳转）；另有 S12 Reconfiguration 风格的信息弹窗。
+- **Hero 首屏**个人标识与简介。
 
 ## 特性
 
